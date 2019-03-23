@@ -1,0 +1,58 @@
+.regist_form{
+    width: 196px;
+    margin: 0 auto;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 3px;
+
+
+    
+}
+
+.btn{
+    margin: 10px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.name_form{
+   border: 3px solid white;
+   border-radius: 4px;
+   margin: 6px;
+   padding: 5px;
+    background-color: rgb(180, 9, 9);
+}
+
+
+.user_form{
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+label{
+    color:darkred;
+}
+a{
+    text-decoration: none;
+    color:lightblue;
+}
+
+.name_form{
+    text-align: center;
+    font-weight: bolder;
+}
+.user{
+    border: 1px solid white;
+}
+.password{
+    border: 1px solid white;
+
+}
+
+.user_bad{
+    border: 1px solid red;
+}
+
+.password_bad{
+    border: 1px solid red;
+}
