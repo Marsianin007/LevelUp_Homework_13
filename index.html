@@ -9,17 +9,17 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <form action="" method="POST" name="test" id="form" class="regist_form">
+    <form action="" method="POST" name="test" id="form" class="regist_form" onsubmit="valid(this)">
 
         <div class="name_form">
             Форма входа
         </div>
 
         <div class="user_form">
-            <input type="text" class="user" name="user" id="user" placeholder="Введите имя" pattern="[a-z0-9]+$">
-            <input type="password" class="password" name="password" id="password" placeholder="Введите пароль" pattern="[A-Za-z]+$">
+            <input type="text" class="user" name="user" id="user" placeholder="Введите имя" oninvalid="user_mistake()" pattern="[a-z0-9]+$">
+            <input type="password" class="password" name="password" id="password" placeholder="Введите пароль" oninvalid="pass_mistake()" pattern="[A-Za-z]+$">
             <input type="checkbox"  class="check"> <label> Запомнить </label>
-            <input type="button" onclick="valid(document.getElementById('form'))" name="button" class="btn" value="Войти">
+            <input type="submit" name="button" class="btn" value="Войти">
             <div class="reset">
                 <a href="">Забыл пароль</a>
                 <a href="">Регистрация</a>

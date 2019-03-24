@@ -42,17 +42,17 @@ a{
     font-weight: bolder;
 }
 .user{
-    border: 1px solid white;
+    border: 1px solid greenyellow;
 }
 .password{
-    border: 1px solid white;
+    border: 1px solid greenyellow;
 
 }
 
 .user_bad{
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 .password_bad{
-    border: 1px solid red;
+    border: 2px solid red;
 }
