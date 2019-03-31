@@ -1,5 +1,5 @@
 .regist_form{
-    width: 196px;
+    width: 210px;
     margin: 0 auto;
     background-color: black;
     border: 2px solid black;
@@ -16,11 +16,24 @@
 }
 
 .name_form{
-   border: 3px solid white;
-   border-radius: 4px;
-   margin: 6px;
-   padding: 5px;
+  /* border: 3px solid white;*/
+    border-radius: 4px;
+    margin: 6px;
+    padding: 5px;
     background-color: rgb(180, 9, 9);
+    text-align: center;
+    font-weight: 550;
+    position: relative;
+    color: white;
+}
+
+.name_form::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    border-top: 28px solid rgb(180, 9, 9);
+    border-left: 40px solid black;
+    width: 0;
 }
 
 
@@ -34,20 +47,21 @@ label{
 }
 a{
     text-decoration: none;
-    color:lightblue;
+    color:gray
 }
 
-.name_form{
-    text-align: center;
-    font-weight: bolder;
-}
 .user{
-    border: 1px solid greenyellow;
+    border: 1px solid green;
+    background-color: gray;
+    
 }
 .password{
-    border: 1px solid greenyellow;
-
+    border: 1px solid green;
+    background-color: gray;
 }
+::placeholder {
+    color: rgb(209, 200, 200);
+  }
 
 .user_bad{
     border: 2px solid red;
@@ -55,4 +69,12 @@ a{
 
 .password_bad{
     border: 2px solid red;
+}
+
+.png{
+    width: 15px;
+}
+.left_pass{
+    border-right: 2px solid gray;
+    
 }
