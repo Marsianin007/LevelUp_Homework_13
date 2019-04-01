@@ -94,9 +94,26 @@ function valid(form){
         alert("All is good");
     }
 
+     var resultLog = login.match(/A-Z/gi);
+    if(resultLog!=0){
+        login.className = "user_bad";
+        login.addInvalidity('Только маленькие буквы');
+    }
+    else{
+        login.className = "user";
+    }
+
+    var resultPass = password.value.match(/0-9/gi);
+        if(resultPass!=0){
+            password.className = "password_bad";
+            password.addInvalidity('Нельзя использовать цифры');
+        }
+        else{
+            password.className = "password";
+        }
 
 }
-
+/*
 function onLogin(){
     var resultLog = login.match(/A-Z/gi);
     if(resultLog!=0){
@@ -118,3 +135,4 @@ function onPass(){
         password.className = "password";
     }
 }
+
