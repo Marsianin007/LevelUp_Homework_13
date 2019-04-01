@@ -79,7 +79,7 @@ function valid(form){
     //var pass= form.password.value;
     
 
-    if(password.length < 6 || password.length > 16){
+    if(password.value.length < 6 || password.value.length > 16){
         password.className = "password_bad";
         alert("Введите пароль нужной длины");
         check = false;
@@ -93,8 +93,8 @@ function valid(form){
     if(check){
         alert("All is good");
     }
-
-     var resultLog = login.match(/A-Z/gi);
+    //проверка логина
+     var resultLog = login.value.match(/A-Z/gi);
     if(resultLog!=0){
         login.className = "user_bad";
         login.addInvalidity('Только маленькие буквы');
@@ -102,7 +102,7 @@ function valid(form){
     else{
         login.className = "user";
     }
-
+    //проверка пароля
     var resultPass = password.value.match(/0-9/gi);
         if(resultPass!=0){
             password.className = "password_bad";
